@@ -9,8 +9,7 @@ jobs:
   reusable_workflow_job:
     runs-on: ubuntu-latest
     steps:     
-      - uses: ./.github/workflows
-        with:
-          username: ${{ inputs.username }}
+      - uses: actions/checkout@v3
+      
       - name: print
-        run: echo username
+        run: echo "${{username}}"
