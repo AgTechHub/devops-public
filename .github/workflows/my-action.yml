@@ -1,0 +1,12 @@
+
+# action.yml
+name: 'Hello Gabriel'
+inputs:
+    username:  # id of input
+      description: 'USERNAME'
+      required: true
+      default: 'PEPE'
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs: echo username
